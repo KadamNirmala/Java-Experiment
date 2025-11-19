@@ -37,6 +37,7 @@ public class studentController {
 	    Student student = service.getStudent(id)
 	            .orElseThrow(() -> new ResourceNotFoundException("Student not found with id: " + id));
 				System.out.println("HIIII");
+//				sdfghjkl
 	    return ResponseEntity.ok(student);
 	}
 	
