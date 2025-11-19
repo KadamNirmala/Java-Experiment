@@ -36,7 +36,7 @@ public class studentController {
 	public ResponseEntity<Student> getStudent(@PathVariable int id) {
 	    Student student = service.getStudent(id)
 	            .orElseThrow(() -> new ResourceNotFoundException("Student not found with id: " + id));
-
+				System.out.println("HIIII");
 	    return ResponseEntity.ok(student);
 	}
 	
