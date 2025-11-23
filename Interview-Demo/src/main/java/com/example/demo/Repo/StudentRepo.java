@@ -26,8 +26,5 @@ public interface StudentRepo extends JpaRepository<Student, Integer> {
 	
 	@Query("SELECT COUNT(s) FROM Student s WHERE s.branch = :branch")
 	Long countByBranch(@Param("branch") String branch);
-	
-
-	
-	
+		
 }

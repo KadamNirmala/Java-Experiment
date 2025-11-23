@@ -1,9 +1,6 @@
 package com.example.demo.Controller;
 
 import java.util.List;
-import java.util.Optional;
-
-import org.hibernate.annotations.NotFound;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -75,7 +72,6 @@ public class studentController {
 	@GetMapping("/branch/{branch}")
 	public List<Student> getStudentByBranch(@PathVariable String branch){
 		return service.getStudentByBranch(branch);
-//		return null;
 	}
 	
 	
